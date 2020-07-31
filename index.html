@@ -7,61 +7,62 @@
     <link rel="stylesheet" type="text/css" href=main.css>
 </head>
 <body>
-    <nav role="navigation"> 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="nav"> 
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/> 
+        <div class="menu">
+            <a href="#aboutMe">About me</a>
+            <a href="#myPorojects">Projects</a>
+            <a href="#contactMe">Contact</a>
+        </div>
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#aboutMe">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
 </div>
     <main role="main">
         <header role="banner">
             <h1>Hi, I'm Sam. I'm a fullstack developer and tech enthusiast
             </h1>
 
-            <div style="background-image: url ('desertphoto.jpg');"></div>
+            <div style="background-image: url(desertphoto.jpg)"></div>
         </header>
-        <section>
-            <h2>I left a life of selling technology to pursue a passion in building technology. I am now a web developer who is completing the  Software Engineering track bootcamp at Thinkful. I love solving problems that make daily life more of task than they need to be. I geek out about efficiency so abstraction is supremely satisfying. I also love finding and learning exciting new libraries and frameworks. Being able to uptick my abilities is one of my favorite things to do.
+        <section id="aboutMe">
+            <h2>About Me:</h2>
+            <p>I left a life of selling technology to pursue a passion in building technology. I am now a web developer who is completing the  Software Engineering track bootcamp at Thinkful. I love solving problems that make daily life more of task than they need to be. I geek out about efficiency so abstraction is supremely satisfying. I also love finding and learning exciting new libraries and frameworks. Being able to uptick my abilities is one of my favorite things to do.
                 <br>
                 In my spare time, I enjoy cooking, barbecue, exercise (to negate the effects of the previous passion), history, sports, traveling, and being a positive, upbeat person just trying to make the world a better place, one byte at a time. 
-                I truly enjoy good coffee, coding, technology, and learning about anything and everything.
-                </h2>
+                I truly enjoy good coffee, coding, technology, and learning about anything and everything.</p>
+                
         </section>
-        <section>
-            <img src="quizStart.png"><br> Quiz App: The Barbecue Quiz <br>
+        <section id="myProjects">
+            <h2>Projects</h2>
+            <div class="container">
+             <img class="img" src="quizStart.png" class="responsive">
+            </div> 
+             Quiz App: The Barbecue Quiz <br>
             The Barbecue Quiz is a simple quiz app that tests user knowledge for not only barbecue fans,<br> but for those that range from novice smokers up through true Pitmasters<br>
-            <div id="liveQuiz">Link to live quiz page:<br><button id="liveQuizBtn">https://coffeeandpouch.github.io/Quiz-App/</button></div><br>
+            <ul>Technologies used:
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+            
+            <div id="liveQuiz">Link to live quiz page:<br><a href="liveQuiz" id="liveQuiz">https://coffeeandpouch.github.io/Quiz-App</a></div><br>
 
-            <div id="liveRepo">Link to repository:<br><button id="liveRepoBtn">https://github.com/coffeeandpouch/Quiz-App</button></div>
+            <div id="liveRepo">Link to repository:<br><a href="liveRepo" id="liveRepo">https://github.com/coffeeandpouch/Quiz-App</a></div><br>
         </section>
         <section id="contactInfo">
-           <ul></ul> Contact:<br>
+            <h2>Contact Me</h2>
+           <ul> Contact:<br>
             
            <li>Email: sameinsidler@me.com</li> 
-           <li>GitHub: https://github.com/coffeeandpouch</li>
+           <li>GitHub: "https://github.com/coffeeandpouch">li
            <li>LinkedIn:https://www.linkedin.com/in/samuel-einsidler/</li>
            <li>Twitter: @SnAcKSHaQ</li>
         </ul>
         </section>li
             
-        </section>
-
-
         <footer role="content-info"></footer>
     </main>
-   <script src="jquery-3.5.1.min.js"></script> 
+    <src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="index.js"></script>
 </body>
 </html>
