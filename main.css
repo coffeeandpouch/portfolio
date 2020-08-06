@@ -23,11 +23,10 @@ body {
   line-height: 50px;
   background-color: burlywood;
   position: fixed;
-
 }
 .menu {
   margin: 0 30px 0 0;
-  text-align: center;;
+  text-align: center;
   line-height: center;
 
   display: none;
@@ -42,7 +41,6 @@ body {
   line-height: 0px;
   display: inline-block;
   padding: 0;
-  
 }
 
 label {
@@ -67,8 +65,8 @@ a {
   font-size: 3vw;
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  align-items:space-between;
+  justify-content: flex-start;
+  align-items: space-between;
   line-height: 15px;
 }
 nav,
@@ -90,10 +88,9 @@ h1 {
   margin-top: -30px;
   margin-bottom: 80px;
   vertical-align: top;
-  position: static ;
+  position: static;
   color: rgb(2, 68, 97);
   font-size: 4vw;
-  
 }
 
 h2 {
@@ -121,10 +118,10 @@ p {
 }
 
 section:nth-child(odd) {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: auto;
   background-color: burlywood;
   color: rgb(2, 68, 97);
@@ -139,8 +136,6 @@ section:nth-child(odd) {
   max-width: 600px;
   max-height: 500px;
   border: 1px solid #dddd;
-  /*margin-left: 45%;
-  margin-bottom: 30%;*/
 }
 
 img {
@@ -156,7 +151,8 @@ img {
   /*margin-bottom: 100px;*/
 }
 
-ul, li {
+ul,
+li {
   text-decoration: none;
   list-style: none;
   color: rgb(2, 68, 97);
@@ -186,16 +182,17 @@ ul, li {
   text-align: center;
   color: white;
   background-color: rgb(2, 68, 97);
-  
 }
 
 .responsive {
   width: 100%;
-  max-width:600px;
+  max-width: 600px;
   height: auto;
 }
 
-ul,#contact, a {
+ul,
+#contact,
+a {
   color: burlywood;
 }
 
@@ -205,96 +202,96 @@ footer {
   font-size: 3vh;
 }
 
-.contactInfo {
-  color:burlywood;
+.contactList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: burlywood;
+  text-align: center;
+  line-height: 5%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-.menu, a {
-  text-align: center;
-  margin: 18px;
-  line-height: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: space-around;
-}
-
-h1 {
-  margin-top: -55px;
-  margin-bottom: 80px;
-  vertical-align: top;
-  position: static ;
-  color: rgb(2, 68, 97);
-  font-size: 4vw;
-  
-}
-
-label {
-  display: none;
-  
-}
-
-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 450px;
-  line-height: 100px;
-  background-color: #ddd;
-  margin-right: 2px;
-}
-
-#contactInfo {
-  padding: 30px;
-  line-height: 30px;;
-}
-}
-
-@media only screen and (min-width: 1025px) {
-  
-body {
-    background-color:rgb(2, 68,97) ;
-  }
-
-.menu, a {
-    margin: 18px;
+  .menu,
+  a {
     text-align: center;
-    line-height: 70px;
+    margin: 18px;
+    line-height: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
-  }
-
-label {
-  display: none;
-
+    align-items: space-around;
   }
 
   h1 {
-    margin-top: -90px;
+    margin-top: -55px;
     margin-bottom: 80px;
     vertical-align: top;
-    position: static ;
+    position: static;
     color: rgb(2, 68, 97);
     font-size: 4vw;
-    
   }
-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
-  height: 450px;
-  line-height: 100px;
-  background-color: #ddd;
-  margin-right: 2px;
- 
+
+  label {
+    display: none;
+  }
+
+  img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    line-height: 100px;
+    background-color: #ddd;
+    margin-right: 2px;
+  }
 }
 
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: rgb(2, 68, 97);
+  }
+
+  .menu,
+  a {
+    margin: 18px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  label {
+    display: none;
+  }
+
+  h1 {
+    margin-top: -40%;
+    margin-bottom: 80px;
+    vertical-align: top;
+    position: static;
+    color: rgb(2, 68, 97);
+    font-size: 4vw;
+    /* text-align: left; */
+  }
+  img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    line-height: 100px;
+    background-color: #ddd;
+    margin-right: 2px;
+  }
+
+  header {
+    border: 50px;
+    padding: 25%;
+  }
 }
