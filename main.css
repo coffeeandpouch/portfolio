@@ -65,9 +65,14 @@ a {
   font-size: 3vw;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: space-between;
-  line-height: 15px;
+  line-height: -30px;
+  margin-bottom: auto;
+}
+
+a:hover {
+  font-weight: bold;
 }
 nav,
 footer {
@@ -189,11 +194,11 @@ li {
   padding: 75px;
 }
 
-.responsive {
+/* .responsive {
   width: 100%;
   max-width: 600px;
   height: auto;
-}
+} */
 
 ul,
 #contact,
@@ -284,7 +289,6 @@ footer {
     position: static;
     color: rgb(2, 68, 97);
     font-size: 4vw;
-    
   }
   img {
     display: flex;
