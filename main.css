@@ -72,7 +72,8 @@ a {
 }
 
 a:hover {
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 500;
 }
 nav,
 footer {
@@ -171,6 +172,10 @@ li {
   color: rgb(2, 68, 97);
 }
 
+#liveQuiz:hover {
+  font-style: italic;
+}
+
 #liveRepo {
   display: flex;
   flex-direction: column;
@@ -178,6 +183,11 @@ li {
   align-items: flex-end;
   font-size: 3vw;
   color: rgb(2, 68, 97);
+  
+}
+
+#liveRepo:hover {
+  font-style: italic;
 }
 
 #contactInfo {
@@ -193,12 +203,6 @@ li {
   align-items: center;
   padding: 75px;
 }
-
-/* .responsive {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-} */
 
 ul,
 #contact,
