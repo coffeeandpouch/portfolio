@@ -1,53 +1,64 @@
 * {
   box-sizing: border-box;
 }
+main {
+  padding: 10px;
+}
 
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   font-family: League Spartan;
-  background-color: rgb(2, 68, 97);
+  background-color: burlywood;
   color: #4444;
   text-align: center;
   line-height: 1.5;
   border: 0;
 }
 
-.nav {
+nav {
   border-bottom: 1px solid #eaeaeb;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
   width: 100%;
-  height: 30px;
-  line-height: 50px;
+  height: 50px;
+  line-height: 1.5;
   background-color: burlywood;
   position: fixed;
+  top: 0;
+  z-index: 2;
 }
 .menu {
-  margin: 0 30px 0 0;
-  text-align: center;
-  line-height: center;
+  text-align: top;
 
-  display: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0;
+  height: 100%;
 }
 
 .menu a {
-  clear: right;
   text-decoration: none;
   color: gray;
-  margin: 0 10px 30px 0;
-  margin-bottom: -60px;
-  line-height: 0px;
-  display: inline-block;
+  margin: 5px;
+  text-align: top;
+
+  line-height: 10px;
+
   padding: 0;
+  font-size: 3vw;
 }
 
 label {
-  margin: 10px 15px -10px 0;
-  font-size: 20px;
-  line-height: 10px;
-  display: block;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   cursor: pointer;
   width: 26px;
   float: right;
@@ -62,26 +73,24 @@ label {
 }
 
 a {
-  font-size: 3vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-between;
-  line-height: -30px;
-  margin-bottom: auto;
+  font-size: 1em;
+  display: inline-block;
+  color: white;
 }
 
 a:hover {
   font-style: italic;
-  font-weight: 500;
+  background-color: rgb(2, 68, 97);
+  color: orange;
+  padding: 20px;
 }
-nav,
-footer {
-  background-color: burlywood;
-}
+
 header {
   width: auto;
-  padding: 18% 0;
+  margin-top: 50px;
+  margin-right: 0;
+  
+  height: 300px;
   background-image: url("desertphoto.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -91,10 +100,6 @@ header {
 }
 
 h1 {
-  margin-top: -30px;
-  margin-bottom: 80px;
-  vertical-align: top;
-  position: static;
   color: rgb(2, 68, 97);
   font-size: 4vw;
 }
@@ -102,7 +107,7 @@ h1 {
 h2 {
   font-size: 4vw;
   margin-bottom: none;
-  border-spacing: 0pt;
+  border-spacing: 0px;
 }
 #aboutMe {
   display: flex;
@@ -110,28 +115,35 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 70px;
-  padding: 0;
+
   background-color: rgb(2, 68, 97);
   color: white;
   border: 10px;
+ 
 }
 
 p {
   font-size: 3vw;
-  border: 0;
   margin-top: none;
 }
-
-section:nth-child(odd) {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+section:nth-child(odd) {
   width: auto;
   background-color: burlywood;
   color: rgb(2, 68, 97);
-  font-size: 3vw;
+  font-size: 2em;
+}
+.Projects {
+  color: rgb(2, 68, 97);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -139,22 +151,16 @@ section:nth-child(odd) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
-  max-height: 500px;
-  border: 1px solid #dddd;
+  padding: 0;
 }
 
-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.quizImg {
   width: 300px;
-  height: 225px;
-  line-height: 100px;
-  background-color: #ddd;
-  margin-right: 2px;
-  /*margin-bottom: 100px;*/
+}
+
+.quizDetails {
+  font-size: 3vw;
+  color: rgb(2, 68, 97);
 }
 
 ul,
@@ -162,39 +168,59 @@ li {
   text-decoration: none;
   list-style: none;
   color: rgb(2, 68, 97);
+  padding-inline-start: 0;
+  font-size: 3vw;
+  
+}
+
+#linktext {
+  font-size: 3vw;
+  color: black;
+  margin: 0;
+}
+.linkHeaderQuiz {
+  float: right;
+  font-size: 3vw;
 }
 #liveQuiz {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: flex-start;
+  align-items: center;
   font-size: 3vw;
   color: rgb(2, 68, 97);
 }
 
 #liveQuiz:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   font-style: italic;
+  background-color: grey;
+  color: orange;
 }
+
 
 #liveRepo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-size: 3vw;
   color: rgb(2, 68, 97);
-  
 }
 
 #liveRepo:hover {
   font-style: italic;
+  background-color: grey;
+  color: orange;
 }
 
-#contactInfo {
+#contactMe {
   width: 100%;
   list-style: none;
-  font-size: 3vw;
-  text-align: center;
+  font-size: 4vw;
   color: white;
   background-color: rgb(2, 68, 97);
   display: flex;
@@ -204,16 +230,9 @@ li {
   padding: 75px;
 }
 
-ul,
-#contact,
-a {
-  color: burlywood;
-}
 
-nav,
-footer {
+nav {
   background-color: rgb(202, 156, 96);
-  font-size: 3vh;
 }
 
 .contactList {
@@ -223,91 +242,83 @@ footer {
   align-items: center;
   color: burlywood;
   text-align: center;
-  line-height: 5%;
+  font-size: 3vw;
+  line-height: 20px;
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu,
-  a {
-    text-align: center;
-    margin: 18px;
-    line-height: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: space-around;
-  }
-
+ 
   h1 {
-    margin-top: -55px;
+    margin-top: 10px;
     margin-bottom: 80px;
     vertical-align: top;
     position: static;
     color: rgb(2, 68, 97);
     font-size: 4vw;
-  }
-
-  label {
-    display: none;
-  }
-
-  img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 450px;
-    line-height: 100px;
-    background-color: #ddd;
-    margin-right: 2px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  body {
-    background-color: rgb(2, 68, 97);
-  }
-
-  .nav {
-    height: 50px;
-  }
-  .menu,
-  a {
-    margin: 30px;
-    text-align: center;
-    line-height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  label {
-    display: none;
-  }
-
-  h1 {
-    margin-top: -40%;
-    margin-bottom: 80px;
-    vertical-align: top;
-    position: static;
-    color: rgb(2, 68, 97);
-    font-size: 4vw;
-  }
-  img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 450px;
-    line-height: 100px;
-    background-color: #ddd;
-    margin-right: 2px;
   }
 
   header {
-    border: 50px;
-    padding: 25%;
+    height: 600px;
+  }
+  label {
+    display: none;
+  }
+
+  .quizImg {
+
+    width: 500px;
+  
+  }
+  .contactList {
+    line-height: 2;
+  }
+
+  .contactInfo:hover {
+    background-color: burlywood;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  body {
+    background-color: burlywood;
+  }
+  
+  h1 {
+
+    position: absolute;
+    top: 120px;
+    color: rgb(2, 68, 97);
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  .Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quizImg {
+    width: 800px;
+
+  }
+
+  header {
+    height: 639px;
+  }
+
+  #linktext {
+    font-size: 4vw;
+  }
+
+  .contactList {
+    line-height: 3;
   }
 }

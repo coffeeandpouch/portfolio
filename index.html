@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sam Einsidler Portfolio</title>
-    <link rel="stylesheet" type="text/css" href=main.css>
-</head>
-<body>
-    <div class="nav"> 
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/> 
-        <div class="menu">
-            <a href="#aboutMe">About me</a>
-            <a href="#myProjects">Projects</a>
-            <a href="#contactMe">Contact</a>
-        </div>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <!-- <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" /> -->
+        <ul class="menu">
+          <li><a href="#aboutMe">About me</a></li>
+          <li><a href="#myProjects">Projects</a></li>
+          <li><a href="#contactMe">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Hi, I'm Sam. I'm a fullstack developer and tech enthusiast</h1>
 
-</div>
+      <div style="background-image: url(desertphoto.jpg);"></div>
+    </header>
     <main>
-        <header>
-            <h1>Hi, I'm Sam. I'm a fullstack developer and tech enthusiast
-            </h1>
+      <section class="aboutMe" id="aboutMe">
+        <h2>About Me:</h2>
+        <p>
+          I left a life of selling technology to pursue a passion in building
+          technology. I am now a web developer who is completing the Software
+          Engineering track bootcamp at Thinkful. I love solving problems that
+          make daily life more of task than they need to be. I geek out about
+          efficiency so abstraction is supremely satisfying. I also love finding
+          and learning exciting new libraries and frameworks. Being able to
+          uptick my abilities is one of my favorite things to do.
+          <br />
+          In my spare time, I enjoy cooking, barbecue, exercise (to negate the
+          effects of the previous passion), history, sports, traveling, and
+          being a positive, upbeat person just trying to make the world a better
+          place, one byte at a time. I truly enjoy good coffee, coding,
+          technology, and learning about anything and everything.
+        </p>
+      </section>
+      <section class="projects" id="myProjects">
+        <h2 class="Projects">Projects:</h2>
+        <div class="container">
+          <img class="quizImg" src="quizStart.png" alt="quizStartPic" />
+        </div>
+        <p class="quizDetails">
+          Quiz App: The Barbecue Quiz <br />
+          The Barbecue Quiz is a simple quiz app that tests user knowledge for
+          not only barbecue fans, but for those that range from novice smokers
+          up through true Pitmasters.
+        </p>
+        <br />
+        <ul id="techList">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
 
-            <div style="background-image: url(desertphoto.jpg)"></div>
-        </header>
-        <section class="aboutMe" id="aboutMe">
-            <h2>About Me:</h2>
-            <p>I left a life of selling technology to pursue a passion in building technology. I am now a web developer who is completing the  Software Engineering track bootcamp at Thinkful. I love solving problems that make daily life more of task than they need to be. I geek out about efficiency so abstraction is supremely satisfying. I also love finding and learning exciting new libraries and frameworks. Being able to uptick my abilities is one of my favorite things to do.
-                <br>
-                In my spare time, I enjoy cooking, barbecue, exercise (to negate the effects of the previous passion), history, sports, traveling, and being a positive, upbeat person just trying to make the world a better place, one byte at a time. 
-                I truly enjoy good coffee, coding, technology, and learning about anything and everything.</p>
-                
-        </section>
-        <section class="projects" id="myProjects">
-            <h2>Projects</h2>
-            <div class="container">
-             <img class="img" src="quizStart.png" alt="quizStartPic">
-            </div> 
-             Quiz App: The Barbecue Quiz <br>
-            The Barbecue Quiz is a simple quiz app that tests user knowledge for not only barbecue fans,<br> but for those that range from novice smokers up through true Pitmasters.<br>
-            <ul id="techList">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-            </ul>
-            
-            <div>Link to live quiz page:<br><a href="https://coffeeandpouch.github.io/Quiz-App" class="activeQuiz" id="liveQuiz" >Click here!</a></div><br>
+        <div>
+          <p id="linktext">Link to live quiz page:</p>
+          <br /><a
+            href="https://coffeeandpouch.github.io/Quiz-App"
+            class="activeQuiz"
+            id="liveQuiz"
+            >Click here!</a
+          >
+        </div>
+        <br />
 
-            <div>Link to repository:<br><a href="https://github.com/coffeeandpouch/Quiz-App" class="activeRepo" id="liveRepo">Click here!</a></div><br>
-        </section>
-        <section class="contactList" id="contactMe">
-            <h2 class="contactInfo">Check me out:</h2>
-           <a href= "https://github.com/coffeeandpouch">Github</a>
-            <a href="https://www.linkedin.com/in/samuel-einsidler">LinkedIn</a>
-           <a href= "mailto:sameinsidler@me.com">or you can always Email me!</a> 
-        
-        </section>
-            
+        <div>
+          <p id="linktext">Link to repository:</p>
+          <br /><a
+            href="https://github.com/coffeeandpouch/Quiz-App"
+            class="activeRepo"
+            id="liveRepo"
+            >Click here!</a
+          >
+        </div>
+        <br />
+      </section>
+      <address id="contactMe">
+        <h2 class="contactInfo">Contact Me:</h2>
+        <a href="https://github.com/coffeeandpouch">Github</a>
+        <a href="https://www.linkedin.com/in/samuel-einsidler">LinkedIn</a>
+        <a href="mailto:sameinsidler@me.com">Email me!</a>
+      </address>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
