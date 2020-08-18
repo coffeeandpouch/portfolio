@@ -43,7 +43,7 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: gray;
+  color: rgb(2, 68, 97);
   margin: 5px;
   text-align: top;
   line-height: 10px;
@@ -220,10 +220,12 @@ li {
 #liveRepo:focus {
   outline: 3px;
 }
+
 .bottom {
   background-color: rgb(2, 68, 97);
   color:white;
 }
+
 #contactMe {
   width: 100%;
   list-style: none;
@@ -237,9 +239,9 @@ li {
   padding: 75px;
 }
 
-nav {
+/* nav {
   background-color: rgb(202, 156, 96);
-}
+} */
 
 .contactList {
   display: flex;
@@ -296,6 +298,10 @@ nav {
     color: rgb(2, 68, 97);
     font-size: 3.75vw;
     margin: 0;
+  }
+
+  nav{
+    height: 100px;
   }
 
   p{
