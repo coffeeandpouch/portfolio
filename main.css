@@ -214,7 +214,7 @@ li {
 }
 
 #liveRepo:visited {
-  /* color: purple; */
+  color: purple;
 }
 
 #liveRepo:focus {
@@ -264,9 +264,10 @@ li {
     font-size: 4vw;
   }
 
-  menu, a {
+  /* menu, a {
     font-size: 1.25vw;
-  }
+    color: rgb(2, 68, 97);
+  } */
 
   header {
     height: 600px;
