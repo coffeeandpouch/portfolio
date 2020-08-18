@@ -15,11 +15,12 @@ body {
   text-align: center;
   line-height: 1.5;
   border: 0;
+  font-size: 16px
 }
 
 nav {
   border-bottom: 1px solid #eaeaeb;
-  font-size: 3vw;
+  font-size: 16px;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -45,14 +46,12 @@ nav {
   color: gray;
   margin: 5px;
   text-align: top;
-
   line-height: 10px;
-
   padding: 0;
-  font-size: 3vw;
+  font-size: 16px;
 }
 
-label {
+/* label {
   margin-right: 10px;
   font-size: 1em;
   line-height: 50px;
@@ -62,7 +61,7 @@ label {
   cursor: pointer;
   width: 26px;
   float: right;
-}
+} */
 
 #toggle {
   display: none;
@@ -73,7 +72,7 @@ label {
 }
 
 a {
-  font-size: 1em;
+  font-size: 0.9vw;
   display: inline-block;
   color: white;
 }
@@ -89,7 +88,6 @@ header {
   width: auto;
   margin-top: 50px;
   margin-right: 0;
-  
   height: 300px;
   background-image: url("desertphoto.jpg");
   background-repeat: no-repeat;
@@ -101,11 +99,11 @@ header {
 
 h1 {
   color: rgb(2, 68, 97);
-  font-size: 4vw;
+  font-size: 3.75vw;
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 3.75vw;
   margin-bottom: none;
   border-spacing: 0px;
 }
@@ -119,12 +117,12 @@ h2 {
   background-color: rgb(2, 68, 97);
   color: white;
   border: 10px;
- 
 }
 
 p {
-  font-size: 3vw;
+  font-size: 16px;
   margin-top: none;
+  padding: 15px;
 }
 section {
   display: flex;
@@ -136,7 +134,7 @@ section:nth-child(odd) {
   width: auto;
   background-color: burlywood;
   color: rgb(2, 68, 97);
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 .Projects {
   color: rgb(2, 68, 97);
@@ -159,7 +157,7 @@ section:nth-child(odd) {
 }
 
 .quizDetails {
-  font-size: 3vw;
+  font-size: 1.09vw;
   color: rgb(2, 68, 97);
 }
 
@@ -170,10 +168,9 @@ li {
   color: rgb(2, 68, 97);
   padding-inline-start: 0;
   font-size: 3vw;
-  
 }
 
-#linktext {
+.linktext {
   font-size: 3vw;
   color: black;
   margin: 0;
@@ -201,7 +198,6 @@ li {
   color: orange;
 }
 
-
 #liveRepo {
   display: flex;
   flex-direction: column;
@@ -217,10 +213,21 @@ li {
   color: orange;
 }
 
+#liveRepo:visited {
+  /* color: purple; */
+}
+
+#liveRepo:focus {
+  outline: 3px;
+}
+.bottom {
+  background-color: rgb(2, 68, 97);
+  color:white;
+}
 #contactMe {
   width: 100%;
   list-style: none;
-  font-size: 4vw;
+  font-size: 1vw;
   color: white;
   background-color: rgb(2, 68, 97);
   display: flex;
@@ -229,7 +236,6 @@ li {
   align-items: center;
   padding: 75px;
 }
-
 
 nav {
   background-color: rgb(202, 156, 96);
@@ -246,9 +252,7 @@ nav {
   line-height: 20px;
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
- 
   h1 {
     margin-top: 10px;
     margin-bottom: 80px;
@@ -256,6 +260,10 @@ nav {
     position: static;
     color: rgb(2, 68, 97);
     font-size: 4vw;
+  }
+
+  menu, a {
+    font-size: 1.25vw;
   }
 
   header {
@@ -266,9 +274,7 @@ nav {
   }
 
   .quizImg {
-
     width: 500px;
-  
   }
   .contactList {
     line-height: 2;
@@ -283,14 +289,17 @@ nav {
   body {
     background-color: burlywood;
   }
-  
-  h1 {
 
+  h1 {
     position: absolute;
     top: 120px;
     color: rgb(2, 68, 97);
-    font-size: 4vw;
+    font-size: 3.75vw;
     margin: 0;
+  }
+
+  p{
+    font-size: 1.56vw;
   }
 
   .Projects {
@@ -307,7 +316,6 @@ nav {
 
   .quizImg {
     width: 800px;
-
   }
 
   header {
@@ -315,10 +323,11 @@ nav {
   }
 
   #linktext {
-    font-size: 4vw;
+    font-size: 1.09vw;
   }
 
   .contactList {
+    font-size: 16px;
     line-height: 3;
   }
 }
