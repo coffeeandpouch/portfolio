@@ -247,7 +247,6 @@ li {
     margin-bottom: 80px;
     vertical-align: top;
     position: static;
-    /* color: rgb(2, 68, 97); */
     font-size: 4vw;
   }
 
@@ -293,7 +292,6 @@ li {
   h1 {
     position: absolute;
     top: 120px;
-    /* color: rgb(2, 68, 97); */
     font-size: 3.75vw;
     margin: 0;
   }
