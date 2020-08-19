@@ -117,12 +117,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-/* section:nth-child(odd) {
-  width: auto;
-  background-color: burlywood;
-  color: rgb(2, 68, 97);
-  /* font-size: 2em; */
-/* } */
+
 .Projects {
   width: auto;
   background-color: burlywood;
@@ -174,10 +169,10 @@ li {
   margin: 0;
   padding: 0;
 }
-.linkHeaderQuiz {
+/* .linkHeaderQuiz {
   float: right;
   font-size: 12px;
-}
+} */
 #liveQuiz {
   display: flex;
   flex-direction: column;
@@ -220,9 +215,6 @@ li {
   color: purple;
 }
 
-#liveRepo:focus {
-  outline: 3px;
-}
 
 .bottom {
   background-color: rgb(2, 68, 97);
@@ -263,8 +255,20 @@ li {
     font-size: 4vw;
   }
 
+  h2{
+    font-size:32px;
+  }
+
   header {
     height: 600px;
+  }
+
+  .menu a{
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 18px;
   }
 
   .quizImg {
@@ -280,16 +284,16 @@ li {
     width: 50%;
   }
 
+  .quizDetails{
+    font-size: 13px;
+  }
   .contactList {
     line-height: 2;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  body {
-    background-color: burlywood;
-  }
-
+  
   h1 {
     position: absolute;
     top: 120px;
@@ -299,7 +303,7 @@ li {
   }
 
   h2 {
-    font-size: 3.75vw;
+    font-size: 40px;
   }
 
   nav {
@@ -311,11 +315,11 @@ li {
   }
 
   .menu a {
-    font-size: 1.25vw;
+    font-size: 16px;
   }
 
   p {
-    font-size: 1.56vw;
+    font-size: 20px;
     padding: 20px;
   }
 
@@ -335,8 +339,12 @@ li {
     width: 50%;
   }
 
+  .quizDetails{
+    font-size: 14px;
+  }
+
   #linktext {
-    font-size: 1.4vw;
+    font-size: 18px;
   }
 
   .contactList {
