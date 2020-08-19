@@ -15,7 +15,7 @@ body {
   text-align: center;
   line-height: 1.5;
   border: 0;
-  font-size: 16px
+  font-size: 16px;
 }
 
 nav {
@@ -49,8 +49,7 @@ nav {
   line-height: 10px;
   padding: 0;
   font-size: 16px;
-  -webkit-text-stroke: .5px black;
-
+  -webkit-text-stroke: 0.5px black;
 }
 
 /* label {
@@ -103,15 +102,14 @@ h1 {
   color: rgb(2, 68, 97);
   font-size: 16px;
   font-weight: bolder;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: 0.5px black;
 }
 
 h2 {
   font-size: 14px;
   margin-bottom: none;
   border-spacing: 0px;
-  -webkit-text-stroke: .5px black;
-
+  -webkit-text-stroke: 0.5px black;
 }
 #aboutMe {
   display: flex;
@@ -135,12 +133,12 @@ section {
   justify-content: center;
   align-items: center;
 }
-section:nth-child(odd) {
+/* section:nth-child(odd) {
   width: auto;
   background-color: burlywood;
   color: rgb(2, 68, 97);
   /* font-size: 2em; */
-}
+/* } */
 .Projects {
   width: auto;
   background-color: burlywood;
@@ -151,12 +149,16 @@ section:nth-child(odd) {
   align-items: center;
 }
 
-.container {
+.project-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+.project-container > * {
+  width: 100%;
 }
 
 .quizImg {
@@ -177,16 +179,16 @@ li {
   font-size: 3vw;
 }
 
-.links{
+.links {
   padding: 0;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 .linktext {
   font-size: 12px;
   color: black;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 .linkHeaderQuiz {
   float: right;
@@ -236,7 +238,7 @@ li {
 
 .bottom {
   background-color: rgb(2, 68, 97);
-  color:white;
+  color: white;
   font-size: 12px;
 }
 
@@ -302,7 +304,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+@media only screen and (min-width: 1025px) {
   body {
     background-color: burlywood;
   }
@@ -315,11 +317,11 @@ li {
     margin: 0;
   }
 
-  nav{
+  nav {
     height: 100px;
   }
 
-  p{
+  p {
     font-size: 1.56vw;
   }
 
@@ -330,13 +332,15 @@ li {
     align-items: center;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
+  .project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .quizImg {
-    width: 800px;
+  .project-container > * {
+    width: 50%;
+
+
   }
 
   header {
