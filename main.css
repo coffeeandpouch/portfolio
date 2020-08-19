@@ -169,10 +169,7 @@ li {
   margin: 0;
   padding: 0;
 }
-/* .linkHeaderQuiz {
-  float: right;
-  font-size: 12px;
-} */
+
 #liveQuiz {
   display: flex;
   flex-direction: column;
@@ -316,6 +313,7 @@ li {
 
   .menu a {
     font-size: 16px;
+    font-weight: bold;
   }
 
   p {
