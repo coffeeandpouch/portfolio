@@ -139,7 +139,7 @@ section {
   width: 100%;
 }
 
-.quizImg {
+.ProjectImg {
   width: 300px;
 }
 
@@ -210,6 +210,14 @@ li {
 #liveRepo:visited {
   color: purple;
 }
+.ProjectImg {
+  width: 300px;
+}
+
+.Details {
+  font-size: 12px;
+  color: rgb(2, 68, 97);
+}
 
 .bottom {
   background-color: rgb(2, 68, 97);
@@ -240,7 +248,7 @@ li {
   line-height: 20px;
 }
 
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 768px) {
   h1 {
     margin-top: 10px;
     margin-bottom: 80px;
