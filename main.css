@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: League Spartan;
   background-color: white;
-  color: #4444;
+  color: rgb(2, 68, 97);
   text-align: center;
   line-height: 1.5;
   border: 0;
@@ -25,7 +25,7 @@ nav {
   width: 100%;
   height: 50px;
   line-height: 1.5;
-  background-color: burlywood;
+  background-color: lightgrey;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -92,7 +92,7 @@ h2 {
   font-size: 14px;
   margin-bottom: none;
   border-spacing: 0px;
-  -webkit-text-stroke: 0.5px black;
+  color: rgb(2, 68, 97);
 }
 #aboutMe {
   display: flex;
@@ -100,8 +100,8 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(2, 68, 97);
-  color: white;
+  background-color: white;
+  color: rgb(2, 68, 97);
   border: 10px;
 }
 
@@ -119,7 +119,7 @@ section {
 
 #myProjects {
   width: auto;
-  background-color: burlywood;
+  background-color: lightgrey;
   color: rgb(2, 68, 97);
   display: flex;
   flex-direction: column;
@@ -141,6 +141,7 @@ section {
 
 .ProjectImg {
   width: 300px;
+  outline: 1px rgb(2, 68, 97);
 }
 
 .quizDetails {
@@ -169,7 +170,7 @@ li {
   padding: 0;
 }
 
-#liveQuiz {
+#livePage {
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -178,7 +179,7 @@ li {
   color: rgb(2, 68, 97);
 }
 
-#liveQuiz:hover {
+#livePage:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -188,7 +189,7 @@ li {
   color: orange;
 }
 
-#liveQuiz:visited {
+#livePage:visited {
   color: purple;
 }
 
@@ -204,7 +205,7 @@ li {
 #liveRepo:hover {
   font-style: italic;
   background-color: grey;
-  color: orange;
+  color: white;
 }
 
 #liveRepo:visited {
