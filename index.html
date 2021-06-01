@@ -7,123 +7,126 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#aboutMe">About me</a></li>
-          <li><a href="#myProjects">Projects</a></li>
-          <li><a href="#contactMe">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Hi, I'm Sam. I'm a fullstack developer and tech enthusiast</h1>
-
-      <div style="background-image: url(desertphoto.jpg)"></div>
-    </header>
-    <main>
-      <section class="aboutMe" id="aboutMe">
-        <h2>About Me:</h2>
-        <p>
-          I left a life of selling technology to pursue a passion in building
-          technology. I am now a web developer who is completing the Software
-          Engineering track bootcamp at Thinkful. I am looking to work on a team
-          with other great programmers who share my passion for technology. I
-          love solving problems that make daily life more of task than they need
-          to be. I geek out about efficiency so abstraction is supremely
-          satisfying. I also love finding and learning exciting new libraries
-          and frameworks. Being able to uptick my abilities is one of my
-          favorite things to do.
-          <br />
-          In my spare time, I enjoy cooking, barbecue, exercise (to negate the
-          effects of the previous passion), history, sports, traveling, and
-          being a positive, upbeat person just trying to make the world a better
-          place, one byte at a time. I truly enjoy good coffee, coding,
-          technology, and learning about anything and everything.
-        </p>
-      </section>
-      <section class="projects" id="myProjects">
-        <h2 class="Projects">Projects:</h2>
-        <div class="project-container">
-          <img class="quizImg" src="quizStart.png" alt="quizStartPic" />
-          <p class="quizDetails">
-            Quiz App: The Barbecue Quiz <br />
-            The Barbecue Quiz is a simple quiz app that tests user knowledge for
-            not only barbecue fans, but for those that range from novice smokers
-            up through true Pitmasters.
-          </p>
-          <br />
-          <ul id="techList">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
+    <main id="main-doc">
+      <header>
+        <nav class="nav" id="navbar">
+          <ul class="menu">
+            <li><a href="#aboutMe">About me</a></li>
+            <li><a href="#myProjects">Projects</a></li>
+            <li><a href="#contactMe">Contact</a></li>
           </ul>
+        </nav>
+        
+        <section class="main-section" id="welcome-section">
+        <h1>Hi, I'm Sam. I'm a fullstack developer and tech enthusiast</h1>
 
-          <div class="links">
-            <p class="linktext">Link to live quiz page:</p>
-            <br /><a
-              href="https://coffeeandpouch.github.io/Quiz-App"
-              class="activeQuiz"
-              id="liveQuiz"
-              >Click here!</a
-            >
+        <div style="background-image: url(desertphoto.jpg)"></div>
+      </header>
+      <main>
+          <h2>About Me:</h2>
+          <p>
+            I left a life of selling technology to pursue a passion in building
+            technology. I am now a web developer who is completing the Software
+            Engineering track bootcamp at Thinkful. I am looking to work on a
+            team with other great programmers who share my passion for
+            technology. I love solving problems that make daily life more of
+            task than they need to be. I geek out about efficiency so
+            abstraction is supremely satisfying. I also love finding and
+            learning exciting new libraries and frameworks. Being able to uptick
+            my abilities is one of my favorite things to do.
             <br />
-            <p class="linktext">Link to repository:</p>
-            <br /><a
-              href="https://github.com/coffeeandpouch/Quiz-App"
-              class="activeRepo"
-              id="liveRepo"
-              >Click here!</a
-            >
-          </div>
-        </div>
-        <div class="project-container">
-          <img
-            class="AppPage"
-            src="AppPageWGeocode.png"
-            alt="AppPageWGeocode"
-          />
-          <p class="quizDetails">
-            NextUpSports <br />
-            NextUPSportsis a travel/entertainment app that pulls sports team
-            schedules for the next 5 contests and shows the location for those
-            constests.
+            In my spare time, I enjoy cooking, barbecue, exercise (to negate the
+            effects of the previous passion), history, sports, traveling, and
+            being a positive, upbeat person just trying to make the world a
+            better place, one byte at a time. I truly enjoy good coffee, coding,
+            technology, and learning about anything and everything.
           </p>
-          <br />
-          <ul id="techList">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>REST API</li>
-          </ul>
-
-          <div class="links">
-            <p class="linktext">Link to live quiz page:</p>
-            <br /><a
-              href="https://coffeeandpouch.github.io/NextUpSports"
-              class="activeQuiz"
-              id="liveQuiz"
-              >Click here!</a
-            >
+        </section>
+        <section class="main-section" id="projects">
+          <h2 class="Projects">Projects:</h2>
+          <div class="project-tile">
+            <img class="quizImg" src="quizStart.png" alt="quizStartPic" />
+            <p class="quizDetails">
+              Quiz App: The Barbecue Quiz <br />
+              The Barbecue Quiz is a simple quiz app that tests user knowledge
+              for not only barbecue fans, but for those that range from novice
+              smokers up through true Pitmasters.
+            </p>
             <br />
-            <p class="linktext">Link to repository:</p>
-            <br /><a
-              href="https://github.com/coffeeandpouch/NextUpSports"
-              class="activeRepo"
-              id="liveRepo"
-              >Click here!</a
-            >
+            <ul id="techList">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+
+            <div class="links">
+              <p class="linktext">Link to live quiz page:</p>
+              <br /><a
+                href="https://coffeeandpouch.github.io/Quiz-App"
+                class="activeQuiz"
+                id="liveQuiz"
+                >Click here!</a
+              >
+              <br />
+              <p class="linktext">Link to repository:</p>
+              <br /><a
+                href="https://github.com/coffeeandpouch/Quiz-App"
+                class="activeRepo"
+                id="liveRepo"
+                >Click here!</a
+              >
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="botton">
-        <h2 class="contactInfo">Contact Me:</h2>
-        <address id="contactMe">
-          <a href="https://github.com/coffeeandpouch">Github</a>
-          <a href="https://www.linkedin.com/in/samuel-einsidler">LinkedIn</a>
-          <a href="mailto:sameinsidler@me.com">Email me!</a>
-        </address>
-      </section>
+          <div class="project-tile">
+            <img
+              class="AppPage"
+              src="AppPageWGeocode.png"
+              alt="AppPageWGeocode"
+            />
+            <p class="quizDetails">
+              NextUpSports <br />
+              NextUpSportsis a travel/entertainment app that pulls sports team
+              schedules for the next 5 contests and shows the location for those
+              constests.
+            </p>
+            <br />
+            <ul id="techList">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>REST API</li>
+            </ul>
+
+            <div class="links">
+              <p class="linktext">Link to live quiz page:</p>
+              <br /><a
+                href="https://coffeeandpouch.github.io/NextUpSports"
+                class="activeQuiz"
+                id="liveQuiz"
+                >Click here!</a
+              >
+              <br />
+              <p class="linktext">Link to repository:</p>
+              <br /><a
+                href="https://github.com/coffeeandpouch/NextUpSports"
+                class="activeRepo"
+                id="liveRepo"
+                >Click here!</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="botton">
+          <h2 class="contactInfo">Contact Me:</h2>
+          <address id="contactMe">
+            <a  id="profile-link" href="https://github.com/coffeeandpouch" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/samuel-einsidler" target="_blank">LinkedIn</a>
+            <a href="mailto:sameinsidler@me.com">Email me!</a>
+          </address>
+        </section>
+      </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="index.js"></script>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
   </body>
-</html>
+</ht
