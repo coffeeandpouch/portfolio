@@ -129,7 +129,7 @@ section {
 
 .project-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -137,11 +137,17 @@ section {
 
 .project-container > * {
   width: 100%;
+  border: 3px solid rgb(2, 68, 97);
 }
 
-.ProjectImg {
-  width: 300px;
-  outline: 1px rgb(2, 68, 97);
+.quizImg {
+  width: 500px;
+  border: 3px solid rgb(2, 68, 97);
+}
+
+.AppPage {
+  width: 500px;
+  border: 3px solid rgb(2, 68, 97);
 }
 
 .quizDetails {
@@ -235,20 +241,30 @@ li {
   background-color: rgb(2, 68, 97);
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .contactList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: burlywood;
+  color: white;
   text-align: center;
   font-size: 3vw;
   line-height: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+  .quizImg {
+    width: 450px;
+  }
+
+  .AppPage {
+    width: 450px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -285,6 +301,10 @@ li {
     flex-wrap: wrap;
   }
 
+  .AppPage {
+    width: 500px;
+  }
+
   .project-container > * {
     width: 50%;
   }
@@ -295,9 +315,15 @@ li {
   .contactList {
     line-height: 2;
   }
+  #contactMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (min-width: 1008px) {
   h1 {
     position: absolute;
     top: 120px;
@@ -330,7 +356,7 @@ li {
   .Projects {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -354,5 +380,11 @@ li {
   .contactList {
     font-size: 16px;
     line-height: 3;
+  }
+
+  #contactMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
