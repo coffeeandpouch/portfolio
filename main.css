@@ -141,14 +141,12 @@ section {
 }
 
 .quizImg {
-
   box-shadow: 10px 5px 5px rgb(2, 68, 97);
   width: 500px;
   border: 3px solid rgb(2, 68, 97);
 }
 
 .AppPage {
-
   width: 500px;
   border: 3px solid rgb(2, 68, 97);
   box-shadow: 10px 5px 5px rgb(2, 68, 97);
@@ -263,8 +261,6 @@ li {
 
 @media only screen and (min-width: 640px) {
   .quizImg {
-
-    box-shadow: 10px 5px 5px
     width: 450px;
   }
 
